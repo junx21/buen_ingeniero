@@ -33,7 +33,7 @@ int valid_moves(int start, int moves_remaining) {
 
 int main() {
     int total_movements = 0;
-    int moves = 1;  // Cambia este valor para calcular diferentes movimientos
+    int moves = 18; // Cambia este valor para calcular diferentes movimientos
 
     // Sumamos los movimientos válidos desde todas las posiciones del teclado
     for (int i = 0; i < 10; i++) {
