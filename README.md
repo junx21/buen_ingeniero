@@ -1,3 +1,7 @@
+# Link a Repositorio
+
+https://github.com/junx21/buen_ingeniero.git
+
 # Cálculo de Movimientos Válidos del Caballo en un Teclado Numérico
 
 Para encontrar una fórmula matemática que calcule el número de movimientos válidos del caballo en un teclado numérico, primero debemos reconocer que el problema es más adecuado para resolverse usando técnicas de programación dinámica o recursión. Sin embargo, podemos aproximarnos a una **relación de recurrencia**, que es una expresión matemática que define una secuencia en función de términos anteriores.
