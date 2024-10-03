@@ -124,3 +124,59 @@ M(i, k) = \sum_{j \in vecinos(i)} M(j, k - 1)
 es la clave para calcular el número de trayectorias válidas para cualquier cantidad de movimientos `k`.
 
 Para resolver el problema de manera eficiente, es necesario implementar esta recurrencia utilizando **programación dinámica** o recursión con **memoización**.
+
+# Descripción del Problema
+
+Queremos calcular la cantidad de movimientos válidos que puede hacer el caballo de ajedrez en un teclado numérico (como el de un teléfono) con ciertas restricciones:
+
+- El caballo se mueve como en el ajedrez, es decir, en forma de "L".
+- El teclado está organizado así:
+
+1 2 3
+4 5 6
+7 8 9
+0
+
+
+A partir de una posición inicial (cualquier número del teclado), debes contar cuántos movimientos válidos se pueden hacer con el caballo.
+
+## Plan de Implementación
+
+1. **Estructura del teclado numérico**: Definimos los posibles movimientos válidos del caballo en cada casilla.
+2. **Entrada**: El número de movimientos permitidos.
+3. **Recursividad o programación dinámica**: Implementamos una función que recorra el teclado numérico desde cada posición inicial, contando las combinaciones de movimientos válidos.
+
+## Solución en C
+
+# Explicación del Código
+
+## Matriz de Movimientos
+
+La matriz `movements` indica las posiciones válidas a las que el caballo puede moverse desde cada número del teclado. Si un número no tiene más movimientos válidos, usamos `-1` para marcarlo.
+
+## Función Recursiva `valid_moves`
+
+Esta función toma como entrada la posición actual (`start`) y el número de movimientos restantes (`moves_remaining`).
+
+- Si no quedan movimientos, la función devuelve 1 porque hemos encontrado una secuencia válida.
+- De lo contrario, la función suma los posibles movimientos recursivamente.
+
+## Función `main`
+
+- Itera a través de todas las posiciones del teclado (del 0 al 9) y llama a la función recursiva para contar los movimientos válidos desde cada número.
+- El número de movimientos a realizar se define por la variable `moves`.
+
+## Salida
+
+Imprime el número total de movimientos válidos.
+
+## Ejecución
+
+Para ejecutar el programa:
+
+1. Cambia el valor de la variable `moves` en el `main` para calcular los movimientos válidos con diferentes números de movimientos.
+2. Compila y ejecuta el programa:
+
+   ```bash
+   gcc caballo_teclado.c -o caballo_teclado
+   ./caballo_teclado
