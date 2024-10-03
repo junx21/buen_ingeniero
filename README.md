@@ -92,6 +92,21 @@ Dado que no conocemos una fórmula explícita para calcular la cantidad de movim
 
 Aquí está la tabla completa con la fórmula y los valores estimados:
 
+# Movimientos
+
+| 𝑥 | Posibilidades Válidas 𝑃(𝑥) |
+|---|---------------------------|
+| 1 | 20                        |
+| 2 | 46                        |
+| 3 | 104                       |
+| 5 | 474                       |
+| 8 | 1024                      |
+| 10 | 1740                     |
+| 15 | 3186                     |
+| 18 | 5796                     |
+| 21 | 10368                    |
+| 23 | 14484                    |
+| 32 | 29808                    |
 
 
 ### Fórmula general:
